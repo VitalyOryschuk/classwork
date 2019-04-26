@@ -1,0 +1,93 @@
+* { 
+  box-sizing: border-box;
+}
+.wrapper { 
+  min-height: 100vh;
+  background: purple;
+  color: #fff;
+}
+.container { 
+  min-width: 1000px;
+  margin: 0 auto;
+}
+.title { 
+  font-size: 50px;
+  text-align: center;
+}
+.form { 
+  max-width: 500px;
+  margin: 80px auto;
+  border: 1px solid #000;
+  padding: 50px;
+}
+.input { 
+  display: inline-block;
+  background: none;
+  border-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid #000;
+color: #fff;
+/* убирает рамку */
+outline: none;
+}
+.input::placeholder { 
+  color: #000;
+}
+/* вместо синей рамки черная */
+.input:focus { 
+  border: 1px solid #000;
+}
+.submit { 
+  padding: 8px 15px;
+  background: #000;
+  color: #fff;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  outline: none;
+}
+.submit:hover { 
+  background: purple;
+  border: 1px solid #000;
+  /* при наводе на кнопку появляется рука */
+  cursor: pointer;
+}
+/* при наведении на кнопку белый текст */
+.submit:focus { 
+  border: 1px solid #fff;
+}
+.submit:disabled { 
+  background: green;
+}
+/* задает корневому шрифт */
+:root { 
+  font-family: serif;
+}
+.list { 
+  text-align: center;
+}
+.item { 
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: thistle;
+  vertical-align: top;
+  filter: blur(2px) grayscale(0.5);
+}
+.item:first-child { 
+  background: turquoise;
+}
+/* нечетным(2n+1) */
+.item:nth-child(2n) { 
+  border: 2px solid #000;
+}
+/* последним 2 елементам */
+.item:nth-last-child(-n+2) { 
+  border: 2px solid #000;
+}
+/*  4му и 8 му елементу */
+/* .item:nth-last-child(4n) */
+/* применяется всем пустым  */
+.item:empty { 
+  width: 300px;
+  height: 300px;
+}
