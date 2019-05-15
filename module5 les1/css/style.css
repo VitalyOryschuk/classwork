@@ -1,0 +1,89 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper { 
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.container { 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.square { 
+  position: sticky;
+  top: 60px;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: purple;
+}
+.small-square { 
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+}
+.small-square1 { 
+  top: 0;
+  left: 0;
+}
+.small-square2 { 
+  top: 0;
+  right: 0;
+}
+.small-square3 { 
+  bottom: 0;
+  left: 0;
+}
+.small-square4 { 
+  bottom: 0;
+  right: 0;
+}
+.center-square { 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* треугольник */
+.center-square::before { 
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  border: 50px solid transparent;
+  border-bottom-color: red;
+}
+.modal-wrapper { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 5;
+}
+.modal { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: royalblue;
+}
+/* .haeder { 
+  position: relative;
+}
+.item { 
+  opacity: 0;
+}
+/* .list { 
+  position: absolute;
+  opacity: 0;
+} */
+.item-list:hover >.item {
+  opacity: 1; 
+
+} */
