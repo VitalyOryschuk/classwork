@@ -1,0 +1,43 @@
+* { 
+  box-sizing: border-box;
+}
+.wrapper { 
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.container { 
+  min-width: 1000px;
+  margin: 0 auto;
+}
+.flex-container { 
+  display: flex;
+  flex-wrap: wrap;
+  /* центрируем ребенков */
+  align-items: center;
+  justify-content: space-between;
+  /* если есть высота то работает флигн центр */
+  height: 1000px;
+  background: lightblue;
+  align-content: center;
+}
+.flex-item {
+width: 25%;
+padding: 20px;
+} 
+.flex-item-inner { 
+  background: purple;
+  color: #fff;
+  font-size: 50px;
+  height: 300px;
+  /* виравнивает текст по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item-inner-big { 
+  height: 500px;
+  order: 1;
+}
+.last-element { 
+  order: 1;
+}
