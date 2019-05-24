@@ -35,6 +35,7 @@
   color: #fff;
   text-decoration: none;
   transition: transform 0.8s, border-radius 0.8s;
+  animation: combo 5s   infinite alternate ;
 }
 .logo:hover { 
   transform: rotate(360deg);
@@ -90,4 +91,18 @@ pointer-events: auto;
   to { 
     opacity: 1;
   }
+}
+@keyframes combo { 
+  0% { 
+    transform: translate(0,0);
+  }
+  20% { 
+    transform: translate(50px,0);
+  }
+  60% { 
+    transform: translate(50px,50px);
+  }
+100% { 
+  transform: translate(0,0);
+}
 }
