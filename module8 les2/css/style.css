@@ -43,10 +43,23 @@ footer {
 @media (max-width: 360px) { 
  .map { 
   width: 100%;
+  order: 3;
  } 
 } 
 @media (max-width: 360px) { 
+  .header { 
+    order: 1;
+  }
+}
+@media (max-width: 360px) { 
+  .content { 
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) { 
   .list { 
     width: 100%;
+    order: 2;
   }
 }
